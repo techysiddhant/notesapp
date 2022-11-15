@@ -1,0 +1,32 @@
+<div class="navbar">
+    <div class="logo">
+      <div class="static-text">Welcome</div>
+    <ul class="dynamic-text">
+      <li><span><%=user.displayName%> . . .</span></li>
+    </ul>
+    </div>
+    
+    <div class="search-section">
+      <form action="/searchResults" method="post">
+        <input type="text" id="search-box" name="search" placeholder="Search Title" autocomplete="off" onkeyup="sendData(this)">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+    <a href="/auth/logout" class="logout-btn">Logout</a>
+  </div>
+
+
+  <div class="navbar">
+    <div class="logo">
+        <div class="static-text">Welcome</div>
+    <ul class="dynamic-text">
+      <li><span><%=user.displayName%> . . .</span></li>
+    </ul>
+    </div>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+  </div>

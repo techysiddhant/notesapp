@@ -1,0 +1,31 @@
+<%- include("./partials/header.ejs") %>
+<div class="popup-box">
+    <div class="popup">
+        <div class="content">
+            <header>
+                <p>Update A Note</p>
+                <div class="f-divider"></div>
+            </header>
+            <form action="/update/<%= data._id%>" method="post" class="form">
+                <div class="title row">
+                    <label>Title</label>
+                    <input type="text" name="title" spellcheck="false" value="<%= data.title%>">
+                </div>
+                <div class="row description">
+                    <label >Description</label>
+                    <textarea name="description" spellcheck="false" ><%=data.description%></textarea>
+                </div>
+                <div class="btn">
+                    <a href="/dashboard" class="go-back">Go Back</a>
+                    <button type="submit">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>

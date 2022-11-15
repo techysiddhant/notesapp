@@ -1,0 +1,21 @@
+<%- include("./partials/header.ejs") %>
+<div class="popup-box show-box">
+    <div class="popup show-popup">
+        <div class="show-content">
+            <h1>Read-Only Mode</h1>
+                <div class="show-row">
+                    <input type="text" name="title" spellcheck="false" value="<%= data.title%>" readonly>
+                    <textarea name="description" spellcheck="false"  readonly><%=data.description%></textarea>
+                </div>
+                <div class="show-btn">
+                    <a href="/dashboard" class="go-back">Go Back</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>

@@ -1,0 +1,31 @@
+<%- include("./partials/header.ejs") %>
+<div class="popup-box">
+    <div class="popup">
+        <div class="content">
+            <header>
+                <p>Add a new note</p>
+                <div class="f-divider"></div>
+            </header>
+            <form action="" method="post" class="form">
+                <div class="title row">
+                    <label>Title</label>
+                    <input type="text" name="title" spellcheck="false">
+                </div>
+                <div class="row description">
+                    <label >Description</label>
+                    <textarea name="description" spellcheck="false"></textarea>
+                </div>
+                <div class="btn">
+                    <a href="/dashboard" class="go-back">Go Back</a>
+                    <button type="submit">Add Note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>
